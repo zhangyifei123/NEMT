@@ -1,8 +1,9 @@
 $.ajax({
-	url:"../data/fengbee.php?type=sign_in",
-	type:'get',
+	url:'../data/fengbee.php?type=sign_in',
 	success:function(data){
- 		// var obj = JSON.parse(data);
- 		console.log(data);
- 	}
+		console.log(data);
+		var iframe	= $('<iframe src="" frameborder="0" width="100%" height="1380px;"></iframe>');
+		iframe.attr("src",data);
+		$('main').append(iframe);
+	}
 })

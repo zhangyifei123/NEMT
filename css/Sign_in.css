@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding:0;
+	-webkit-tap-highlight-color:transparent;
+
+	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+}
+body{
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #333;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+input{
+	border:none;
+	outline: none;
+	-webkit-appearance:none;
+}
+ul,ol{
+	list-style-type: none;
+
+}
+.content{
+	width: 100%;
+	max-width: 640px;
+	min-width: 320px;
+	margin:0 auto;
+}
+.content>header{
+	background-image: url(../images/grade_confirm@2x.png);
+	background-size: 100% 55px;
+	width: 100%;
+	height: 55px;
+	display: flex;
+}
+.content>header>a>img{
+	width: 50%;
+	margin-top: 20%;
+}
+.content>header>div{
+	color: white;
+	margin-left: 26%;
+	line-height: 55px;
+	font-size: 18px;
+}
+main>iframe{
+	margin: 0 auto;
+	margin-top:-20px;
+/*vertical-align: top;*/
+}

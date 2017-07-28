@@ -205,5 +205,9 @@ $(".mian_mian").click(function(){
 		isShow = true;
 	}
 });
-
-
+function move_one(){
+	$('.move_one').css('display','inline-block');
+}
+$('.move_one').click(function(){
+	$('.move_one').css('display','none');
+});

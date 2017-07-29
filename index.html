@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/swiper-3.4.2.min.css">
+	<link rel="stylesheet" href="../css/index.css">
+</head>
+<body ng-app="app">
+	<div class="content_box">
+		<header>
+			<div class="head">
+				<a href=""><img src="../images/nav_mail_btn@2x.png" alt=""></a>
+				<span class="segment seg_high" onclick="gotoindex(this,0)">推荐</span>
+				<span class="segment" onclick="gotoindex(this,1)">发现</span>
+				<span class="segment" onclick="gotoindex(this,2)">我的</span>
+				<a href=""><img src="../images/icon_search@2x.png" alt=""></a>
+			</div>
+		</header>
+		<section>
+			<div class="swiper-container big">
+				<div class="swiper-wrapper big1">
+					<div class="swiper-slide big2">
+						<div class="banner_box swiper-container">
+							<ul class='img_box swiper-wrapper'></ul>
+						</div>
+						<div class="nav"></div>
+						<div class="section">
+    						<p>今日听单</p>
+						</div>
+						<div class="section_two">
+							<p>我的订阅</p>
+							<span>还没有订阅任何专辑</span>
+							<div>赶紧去探索一下<img src="../images/discover_more@2x.png" alt=""></div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="nav_two">
+							<ul class="nav_two_box"></ul>
+						</div>
+						<div class="section_three"></div>
+					</div>
+					<div class="swiper-slide">
+						<div class="mian">
+							<div class="mian_box">
+								<div class="mian_top_one"><img src="../images/my_rewrite_btn@2x.png" alt=""> <span>0</span>/天</div>
+								<img src="../images/1815b6e057ba40d6a40366352906cd10.jpg" alt="">
+								<div class="mian_top_two"><span><a href="">编辑资料</a></span></div>
+							</div>
+							<ul class="mian-ul">
+								<li>帅比</li>
+								<li class="bottom_li">ID 1245782</li>
+							</ul>
+							<div class="mian_section">
+								<ul>
+									<li><a href=""><img src="../images/my_star_btn@2x.png" alt=""><p>收藏</p></a></li>
+									<li><a href=""><img src="../images/my_download_btn@2x.png" alt=""><p>下载</p></a></li>
+									<li><a href=""><img src="../images/btn_love_88@2x.png" alt=""><p>订阅</p></a></li>
+								</ul><br>
+								<ul>
+									<li><a href=""><img src="../images/my_bought_btn@2x.png" alt=""><p>已购</p></a></li>
+									<li><a href=""><img src="../images/my_lately_btn@2x.png" alt=""><p>计划播放</p></a></li>
+									<li><a href=""><img src="../images/my_time_btn@2x.png" alt=""><p>定时</p></a></li>
+								</ul>
+							</div>
+							<ul class="mian_mian_box">
+								<li class="mian_mian"><img src="../images/icon_attention_wifi_68@2x.png" alt=""><span>仅通过Wifili联网</span><img src="../images/btn_wifi_open@2x.png" alt="" class="flaot_right"></li>
+								<li><img src="../images/my_downloadto_icon@2x.png" alt=""><span>设置下载目录</span></li>
+								<li><img src="../images/my_clean_icon@2x.png" alt=""><span>清理缓存</span></li>
+								<li><a href=""><img src="../images/my_report_icon@2x.png" alt=""><span>意见反馈</span></a></li>
+								<li><a href=""><img src="../images/my_update_icon@2x.png" alt=""><span>更新检查</span></a></li>
+								<li><a href=""><img src="../images/my_about_icon@2x.png" alt=""><span>关于蜂背</span></a></li>
+							</ul>
+						</div>
+					</div>		  
+				</div>
+			</div>
+			<div class="audio">
+				<a href=""><img src="../images/player_open_btn@2x.png" alt=""></a>
+				正能量|真正的人生赢家是将手中的牌...
+				<img src="../images/player_play_btn@2x.png" class="audio_img" onclick="play()" alt="">
+				<audio src=""></audio>
+			</div>
+		</section>
+	</div>
+	<script src="../js/swiper-3.4.2.min.js"></script>
+	<script src="../js/index.js"></script>
+</body>
+</html>

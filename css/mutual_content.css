@@ -1,0 +1,144 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: "微软雅黑";
+    color: #333;
+    -webkit-tap-highlight-color:transparent;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size:13px;
+}
+body{
+    background-color:rgb(232,232,232);
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+input,textarea{
+    border:none;
+    outline: none;
+    -webkit-appearance:none;
+}
+ul,ol{
+    list-style: none;
+}
+.contents{
+    width:100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin:0 auto;
+}
+header{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width:100%;
+    z-index: 200;
+}
+.interactive_head1{
+    max-width: 640px;
+    min-width: 320px;
+    width:100%;
+    margin:0 auto;
+    background-image: url("../images/grade_confirm@2x.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+.interactive_head1 .interactive_div1{
+    width: 100%;
+    height:55px;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin:auto;
+}
+.interactive_head1 .interactive_div1 a{
+    widht:10px;
+}
+.interactive_head1 .interactive_div1 img{
+    width:50%;
+}
+.interactive_head1 .interactive_div1 span{
+    display:block;
+    color:white;
+    padding-bottom: 5px;
+    padding-right:7.2%;
+}
+.input_number_content{
+    margin-top: 55px;
+    background-color:white;
+    padding:4% 5%;
+    border-bottom: 1px solid rgb(232,232,232);
+}
+.input_number_content .title_color{
+    color:rgb(0,163,254);
+}
+.main_body_div{
+    background-color:white;
+    width:100%;
+}
+.main_body_div .main_body_content{
+    width:90%;
+    margin:auto;
+}
+.main_body_div .main_body_content textarea{
+    width:100%;
+    font-size:12px;
+}
+.main_body_div .upload_div{
+    width:95%;
+    margin:auto;
+}
+.main_body_div .upload_div img{
+    width:25%;
+    padding:3% 0%;
+}
+.list_div{
+    width:100%;
+    text-align: center;
+    padding:10% 0%;
+}
+.prompt_div{
+    width:85%;
+    background-color:white;
+    margin:auto;
+    padding-top:7%;
+    position:absolute;
+    bottom:40%;
+    left:7.5%;
+    display:none;
+}
+.prompt_div .prompt_content_div{
+    width:80%;
+    margin:auto;
+}
+.prompt_div .prompt_content_div .prompt{
+    color:rgb(0,163,254);
+}
+.prompt_div .prompt_content_div .determine{
+    width:75%;
+    color:rgb(0,163,254);
+    padding:5% 0%;
+    text-align:right;
+}
+.upload_pictures_div{
+    background-color:white;
+    width:85%;
+    padding:0% 5%;
+    position:absolute;
+    bottom:40%;
+    left:7.5%;
+    display:none;
+}
+.upload_pictures_div p{
+    padding:3% 2%;
+}
+.upload_pictures_div .upload_way{
+    color:rgb(0,163,254);
+}
+

@@ -1,0 +1,158 @@
+*{
+	margin:0px;
+	padding: 0px;
+	font-family: "微软雅黑";
+	color: #333;
+	-webkit-tap-highlight-color:transparent;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	/*border:1px solid black;*/
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+input{
+	border:none;
+	outline: none;
+	-webkit-appearance:none;
+}
+ul,ol{
+	list-style: none;
+}
+body{
+	background-color:rgb(233,233,233);
+}
+header{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 55px;
+	z-index: 100;
+}
+.content_box{
+	min-width: 320px;
+	max-width: 640px;
+	margin:0 auto;
+}
+.head{
+	width: 100%;
+	height: 100%;
+	min-width: 320px;
+	max-width: 640px;
+	margin:0 auto;
+	background-image: url(../images/grade_confirm@2x.png);
+	background-size: 100% 100%;
+	text-align: center;
+}
+.head>a>img{
+	width: 9%;
+	position: absolute;
+	left: 0px;
+	bottom:0px;
+}
+.head>span{
+	display: inline-block;
+	font-size: 15px;
+	color: white;
+	margin-top: 30px;
+}
+section{
+	width: 100%;
+	min-width: 320px;
+	max-width: 640px;
+	margin:0 auto;
+	margin-top: 55px;
+	padding:0,10px;
+}
+section>div{
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+}
+section>div>img{
+	width: 25%;
+}
+section>ul{
+	width: 100%;
+	background-color: white;
+	margin-top: 10px;
+}
+section>ul>li{
+	width: 100%;
+	padding: 15px 10px;
+	font-size: 13px;
+	color: rgb(150,130,250);
+	border-bottom: 1px solid rgb(233,233,233);
+	overflow: hidden;
+}
+section>ul>li>span{
+	width: 100%;
+	font-size: 13px;
+	color: rgb(150,130,250);
+}
+section>ul>li>.float_right{
+	color: gray;
+	float: right;
+}
+section>div>p{
+	margin-top: 20px;
+	font-size: 12px;
+	color: gray;
+}
+.audio{
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	background-color: white;
+	font-size: 14px;
+	color: gray;
+	text-align: center;
+	padding: 10px;
+}
+.audio img{
+	width: 8%;
+	vertical-align:middle;
+}
+.move_one{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(50,50,50,0.5);
+	display: none;
+}
+.move_one>div{
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	background-color: white;
+	text-align: left;
+	padding: 20px;
+}
+.move_one>div>p{
+	width: 100%;
+	font-size: 12px;
+	color: gray;
+}
+.move_one>div>ul{
+	width: 100%;
+	margin-top: 30px;
+}
+.move_one>div>ul>li{
+	width: 100%;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+.move_one>div>ul>li>img{
+	width: 7%;
+	margin-right: 30px;
+	vertical-align: middle;
+}

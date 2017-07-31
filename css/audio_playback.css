@@ -1,0 +1,90 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: "微软雅黑";
+    color: #333;
+    -webkit-tap-highlight-color:transparent;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size:13px;
+}
+body{
+    background-color:rgb(232,232,232);
+     overflow-x: hidden;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+input{
+    border:none;
+    outline: none;
+    -webkit-appearance:none;
+}
+ul,ol{
+    list-style: none;
+}
+.contents{
+    width:100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin:0 auto;
+}
+header{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width:100%;
+    z-index: 200;
+}
+.head_content_div{
+    max-width: 640px;
+    min-width: 320px;
+    width:100%;
+    margin:0 auto;
+    background-image: url("../images/grade_confirm@2x.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+.head_content_div .head_content{
+    width:100%;
+    height:55px;
+    margin:auto;
+    /* border:1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+.head_content_div .head_content .arrows_div{
+    width:50%;
+    /* border:1px solid black; */
+    display: flex;
+    align-items: flex-end;
+}
+.head_content_div .head_content .arrows_div img{
+    width:55%;
+    vertical-align: bottom;
+}
+.head_content_div .head_content .four_pictures_div{
+    width:50%;
+    /* border:1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.head_content_div .head_content .four_pictures_div img{
+    width:90%;
+}
+.section_content_div{
+    width:100%;
+    background-color: white;
+    margin-top: 55px;
+
+    /* border:1px solid red; */
+}
+.main_content_div{
+    width:90%;
+}

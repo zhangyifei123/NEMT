@@ -1,0 +1,78 @@
+*{
+	margin:0px;
+	padding: 0px;
+	-webkit-tap-highlight-color:transparent;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+body{
+	font-family: "微软雅黑";
+	color: #333;
+	font-size: 14px;
+	background-color: rgba(245,245,245,1);
+
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+input{
+	border:none;
+	outline: none;
+	-webkit-appearance:none;
+}
+ul,ol{
+	list-style: none;
+}
+.big_header{
+	width: 100%;
+	min-width: 320px;
+	margin:0 auto;
+	max-width: 640px;
+}
+header{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	z-index: 2000;
+}
+.head{
+	width: 100%;
+	height: 55px;
+	background-image:url("../images/grade_confirm@2x.png");
+	background-size: 100% 55px;
+	min-width: 320px;
+	margin:0 auto;
+	max-width: 640px;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;		
+}
+.head a img{
+	width: 50%;
+}
+.head span{
+	padding-bottom: 10px;
+	color: white;
+}
+.big_factury{
+	margin-top: 55px;
+	background-color: white;
+}
+.Record{
+	width: 95%;
+	height: 60px;
+
+	margin-left: 2.5%;
+	line-height: 60px;
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 1px solid rgba(162,162,163,0.4);
+}
+.Record span a{
+	font-size: 12px;
+}

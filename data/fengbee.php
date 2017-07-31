@@ -1,4 +1,4 @@
-<?php
+<?php  
 	$type = $_REQUEST['type'];//首页幻灯
 	$str = "";
 	if ($type == 'home_banner') {
@@ -836,6 +836,7 @@
                     {
                         "goodsname": "【预售】冉の心情卡片（7月24日发货！）",
                         "goodsprice": "29.90",
+                        "goodsprice1": "39.90",
                         "goodsimg": "https://sstore.fengbee.cn/goods/avatar/1500477876_6932_xinqing.jpg",
                         "gid": "343805852",
                         "goodstype": "1"
@@ -855,8 +856,11 @@
                         "goodstype": "1"
                     },
                     {
-                        "goodsname": "2018高考白皮书 （2017高考试题分析及2018备考建议）",
+                        "goodsname": "2018高考白皮书 （2017高考试2018备考建议）",
                         "goodsprice": "9.99",
+                        "goodsname1":"运费： 免运费",
+                        
+                        "goodsname2":"剩余：  248",
                         "goodsimg": "https://sstore.fengbee.cn/goods/avatar/1497603987_6827_gkbpsspt.jpg",
                         "gid": "340715023",
                         "goodstype": "1"
@@ -956,7 +960,7 @@
                 "name": "励志壁纸",
                 "goodsinfo": [
                     {
-                        "goodsname": "【第二辑】蜂背主题励志壁纸（24张）【付款后直接发邮箱】",
+                        "goodsname": "【第二辑】蜂背主题励志壁纸（24张）",
                         "goodsprice": "6.99",
                         "goodsimg": "https://sstore.fengbee.cn/goods/avatar/蜂背手机壁纸-2.jpg",
                         "gid": "315326901",
@@ -1030,7 +1034,7 @@
 		}elseif ($pageIndex == 2) {
 			$str = file_get_contents('https://wx.fengbee.cn/bar_jsonpostlist?post_id=1217&page_size=5&product_id=1000');
 		}
-
+		
 	}elseif ($type == 'interact_detail') {//互动详情
 		$post_id = $_REQUEST['post_id'];//文章id
 		$str = file_get_contents('https://wx.fengbee.cn/bar_jsonpostrecord?pid='.$post_id);
@@ -1067,7 +1071,7 @@
     },
     "msg": "成功"
 }';
-		}elseif ($audio_id ==6360) {
+		}elseif ($audio_id == 6360) {
 			$str = '{
     "resultCode": "0000",
     "response": {

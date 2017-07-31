@@ -1,0 +1,232 @@
+*{
+	margin:0px;
+	padding: 0px;
+	-webkit-tap-highlight-color:transparent;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+body{
+	font-family: "微软雅黑";
+	color: #333;
+	font-size: 14px;
+	background-color: rgba(245,245,245,1);
+
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+input{
+	border:none;
+	outline: none;
+	-webkit-appearance:none;
+}
+ul,ol{
+	list-style: none;
+}
+.big_header{
+	width: 100%;
+	min-width: 320px;
+	margin:0 auto;
+	max-width: 640px;
+}
+header{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	z-index: 2000;
+}
+.head{
+	width: 100%;
+	height: 55px;
+	background-image:url("../images/grade_confirm@2x.png");
+	background-size: 100% 55px;
+	min-width: 320px;
+	margin:0 auto;
+	max-width: 640px;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;		
+}
+.head a img{
+	width: 50%;
+}
+.head span{
+	padding-bottom: 10px;
+	color: white;
+}
+.big_img{
+	width: 100%;
+
+}
+.Record{
+	width: 95%;
+	height: 60px;
+
+	margin-left: 2.5%;
+	line-height: 60px;
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 1px solid rgba(162,162,163,0.4);
+}
+.Record span a{
+	font-size: 12px;
+}
+.top_div{
+	width: 100%;
+	margin-top: 58px;
+}
+.money{
+	color: red;
+}
+.top_div img{
+	width: 100%;
+}
+.middle_div{
+	width: 100%;
+	height: 60px;
+	line-height: 30px;
+	margin-top: -3px;
+	background-color: white;
+}
+.bottom_div{
+	width: 100%;
+	height: 50px;
+	background-color: white;
+	border:1px solid rgba(245,245,245,1);
+	line-height: 50px;
+}
+.freight{
+	color: gray;
+	font-size: 10px;
+}
+.Surplus{
+	margin-left: 10%;
+	color: gray;
+	font-size: 10px;
+}
+.Commissary{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	margin-top:8px;
+	background-color: white;
+
+}	
+.Commissary>a{
+     display: flex;
+	justify-content: space-around;
+
+}
+.left_div{
+	width: 49%;
+
+}
+.left_div img{
+	width: 12%;	
+}
+.left_div span{
+	margin-left: 8px;
+
+}
+.right_div{
+	width: 49%;
+	display: inline-block;
+}
+.right_div span{
+    width: 100%;
+	color: gray;
+	margin-left: 40%;
+}
+.right_div img{
+	width: 12%;
+}
+.Authentication{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color: white;
+	border:1px solid rgba(245,245,245,1);
+}
+.Enterprise{
+	display: inline-block;
+}
+.Enterprise img{
+	width: 20%;
+}
+.Enterprise span{
+	color: gray;
+	font-size: 10px;
+}
+.guarantee{
+	display: inline-block;
+}
+.guarantee img{
+	width: 20%;
+}
+.guarantee span{
+	color: gray;
+	font-size: 10px;
+}
+h1{
+	text-align: center;
+	margin-top: 30px;
+}
+.detailed_text span{
+	font-size: 15px;
+}
+.big_img_center{
+	width: 100%;
+	margin-top: 20px;
+}
+.big_img_center img{
+	width: 100%;
+}
+.explain{
+	width: 100%;
+	height: 210px;
+	background-color: white;
+	border:1px solid rgba(245,245,245,1);
+}
+.flexible{
+	width: 100%;
+	height: 50px;
+	background-color: white;
+	line-height: 50px;
+	color:gray;
+	border-bottom:1px solid rgba(245,245,245,1);
+}
+.foot{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 43px;
+	border: 1px solid rgb(222,222,223);
+	line-height:43px;
+	color: rgb(192,192,192);
+	position: fixed;
+	bottom:0px;
+	z-index: 201;
+	background-color: rgba(245,245,245,1);
+	min-width: 320px;
+	margin:0 auto;
+	max-width: 640px;
+}
+.foot>div{
+	width: 100%;
+	font-size: 12px;
+	border-right: 1px solid rgba(162,162,163,0.4);
+	text-align: center;
+}
+.foot>div>a>img{
+	width: 30%;
+	padding-top: 12px;
+}
+
+footer{
+	padding-bottom: 45px;
+}

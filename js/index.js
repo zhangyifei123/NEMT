@@ -28,7 +28,7 @@ function fun(){
 	})
 }
 $.ajax({
-	url:"../data/fengbee.php?type=home_banner",
+	url:"data/fengbee.php?type=home_banner",
 	type:"get",
 	success:function(data){
 		var obj = JSON.parse(data).response;
@@ -44,7 +44,7 @@ $.ajax({
 	}
 })
 $.ajax({
-	url:"../data/fengbee.php?type=home_list",
+	url:"data/fengbee.php?type=home_list",
 	type:"get",
 	success:function(data){
 		var obj = JSON.parse(data).response.shortcutlist2;
@@ -62,7 +62,7 @@ $.ajax({
 })
 var arr = [];
 $.ajax({
-	url:"../data/fengbee.php?type=home_list",
+	url:"data/fengbee.php?type=home_list",
 	type:"get",
 	success:function(data){
 		var obj = JSON.parse(data).response.nowaudios[0].audios;
@@ -73,12 +73,12 @@ $.ajax({
 			var img = $('<img src="" alt="" />');
 			var span = $('<span></span>');
 			var p = $('<p></p>');
-			var img2 = $('<img src="../images/discover_more@2x.png" class="goto" alt="" />');
+			var img2 = $('<img src="images/discover_more@2x.png" class="goto" alt="" />');
 			var img1 = $('<img src="" alt="" class="img" onclick="play(this)" />');
 			var p1 = $('<p class="all"></p>');
 			var div2 = $('<div class="div_all"></div>');
 			img.attr('src',obj1[i].icon);
-			img1.attr('src','../images/btn_play_32@2x.png');
+			img1.attr('src','images/btn_play_32@2x.png');
 			span.text(obj1[i].name);
 			p1.text("查看本周全部听单");
 			p.text(obj[i].name);
@@ -104,16 +104,16 @@ function play(ele){
 			
 	if(isShow){
 		audio.play();
-		$('.audio_img').attr('src','../images/player_pause_btn@2x.png');
+		$('.audio_img').attr('src','images/player_pause_btn@2x.png');
 		isShow = false;
 	}else{
 		audio.pause();
-		$('.audio_img').attr('src','../images/player_play_btn@2x.png');
+		$('.audio_img').attr('src','images/player_play_btn@2x.png');
 		isShow = true;
 	}
 }
 $.ajax({
-	url:"../data/fengbee.php?type=discovery",
+	url:"data/fengbee.php?type=discovery",
 	type:"get",
 	success:function(data){
 		var obj = JSON.parse(data).response;
@@ -139,11 +139,10 @@ $.ajax({
 	}
 });
 $.ajax({
-	url:"../data/fengbee.php?type=discovery",
+	url:"data/fengbee.php?type=discovery",
 	type:"get",
 	success:function(data){
 		var obj = JSON.parse(data).response;
-		console.log(obj);
 		for(var i = 0; i < 3; i++){
 			var div = $('<div></div>');
 			var span = $('<span></span>');
@@ -153,7 +152,7 @@ $.ajax({
 			
 			var a1 = $('<a href=""></a>');
 			span.text(obj[i].title);
-			img.attr('src','../images/tj_icon_week_more_32@2x.png');
+			img.attr('src','images/tj_icon_week_more_32@2x.png');
 			var a = $('<a href="" class="img_box_one"></a>');
 			var a2 = $('<a href=""></a>');
 			var a3 = $('<a href=""></a>');
@@ -198,10 +197,10 @@ var isShow = true;
 
 $(".mian_mian").click(function(){
 	if(isShow){
-		$(".flaot_right").attr('src',"../images/btn_wifi_close@2x.png");
+		$(".flaot_right").attr('src',"images/btn_wifi_close@2x.png");
 		isShow = false;
 	}else{
-		$(".flaot_right").attr('src',"../images/btn_wifi_open@2x.png");
+		$(".flaot_right").attr('src',"images/btn_wifi_open@2x.png");
 		isShow = true;
 	}
 });

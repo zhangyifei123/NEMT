@@ -1143,7 +1143,7 @@
     "response": [
         {
             "title": "精 品 课 程",
-            "icon": "",
+            "icon": "https://simg.fengbee.cn/upload/column/fx_ymgx_6.png",
             "albums": [
                 {
                     "id": "479",

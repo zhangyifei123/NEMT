@@ -2,7 +2,6 @@ $.ajax({
 	url:'../data/fengbee.php?type=lesson_list&albumId=99',
 	success:function(data){
 		var data = JSON.parse(data);
-		console.log(data.response);
 		var img  = $("<img src='' alt='' class='img_data'/>");
 		var p = $("<p class='p_data'>&yen;</p>");
 		var p1 = $("<p class='p1_p'></p>")
@@ -47,16 +46,13 @@ $(".classdiv>ul>li").click(function(){
 	
 })
 
-
-// window.onscroll = function(){
-// 	var a  = document.documentElement.scrollTop || document.body.scrollTop;
-// 	var top1 = document.getElementById('top1');
-// 	if (a>=280) {
-// 		$('.test').addClass("fixed12");
-// 		console.log("执行了");
-// 	}else if(a<280){
-// 		$('.text').removeClass("fixed12");
-// 		console.log("!@#")
-// 	}
-// }
+//到一定的位置
+window.onscroll = function(){
+	var a  = document.documentElement.scrollTop || document.body.scrollTop;
+	if (a>=280) {
+		$('.test').addClass("fixed12");
+	}else if(a<280){
+		$('.test').removeClass("fixed12");
+	}
+}
 

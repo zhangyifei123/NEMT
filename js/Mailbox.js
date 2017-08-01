@@ -3,7 +3,6 @@ $.ajax({
 	// type:"get",
 	success:function(data){
 		var obj = JSON.parse(data).response.broadcastMessages;
-		console.log(obj);
 			console.log(obj[0].avatar);
 			var div = $("<div class='div_div'><img src='../images/system.png' alt='' class='div_img'/></div>");
 			var title = $("<span class='div_title'></span>");

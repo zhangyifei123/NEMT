@@ -3,7 +3,6 @@ $.ajax({
 	success:function(data){
 		for (var i = 0; i < data.length; i++) {
 			 var data1 = JSON.parse(data).response.nowaudios[i].periods[i];
-			 console.log(data1);
 			 var div = $('<div class="div_div"></div>')
 			 var img = $("<img src='' alt='' class='class_img'/>");
 			 var p = $("<p class='class_p'></p>");

@@ -17,7 +17,6 @@ $.ajax({
 			div.append(div1);
 			div1.append(p1)
 			$(".id_classdiv").append(div)
-			console.log(obj[i].name)
 			
 		}
 	}

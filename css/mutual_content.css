@@ -55,10 +55,6 @@ header{
     display:flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin:auto;
-}
-.interactive_head1 .interactive_div1 a{
-    widht:10px;
 }
 .interactive_head1 .interactive_div1 img{
     width:50%;

@@ -32,6 +32,7 @@ $.ajax({
 	type:"get",
 	success:function(data){
 		var obj = JSON.parse(data).response;
+
 		for(var i = 0; i < obj.length; i++){
 			var li = $('<li class="swiper-slide img"></li>');
 			var a = $('<a href=""></a>');
@@ -43,23 +44,24 @@ $.ajax({
 		}fun()
 	}
 })
-$.ajax({
-	url:"data/fengbee.php?type=home_list",
-	type:"get",
-	success:function(data){
-		var obj = JSON.parse(data).response.shortcutlist2;
-		for(var i = 0; i < obj.length; i++){
-			var a = $('<a href=""></a>');
-			var img = $('<img src="" alt="" />');
-			var p = $('<p></p>');
-			img.attr('src',obj[i].icon);
-			p.text(obj[i].name);
-			a.append(img);
-			a.append(p);
-			$('.nav').append(a);
-		}
-	}
-})
+// $.ajax({
+// 	url:"data/fengbee.php?type=home_list",
+// 	type:"get",
+// 	success:function(data){
+// 		var obj = JSON.parse(data).response.shortcutlist2;
+// 		console.log(obj);
+// 		for(var i = 0; i < obj.length; i++){
+// 			var a = $('<a href=""></a>');
+// 			var img = $('<img src="" alt="" />');
+// 			var p = $('<p></p>');
+// 			img.attr('src',obj[i].icon);
+// 			p.text(obj[i].name);
+// 			a.append(img);
+// 			a.append(p);
+// 			$('.nav').append(a);
+// 		}
+// 	}
+// })
 var arr = [];
 $.ajax({
 	url:"data/fengbee.php?type=home_list",
@@ -75,26 +77,30 @@ $.ajax({
 			var p = $('<p></p>');
 			var img2 = $('<img src="images/discover_more@2x.png" class="goto" alt="" />');
 			var img1 = $('<img src="" alt="" class="img" onclick="play(this)" />');
-			var p1 = $('<p class="all"></p>');
+			var p1 = $('<p class="all" onclick="goto"></p>');
 			var div2 = $('<div class="div_all"></div>');
+			var a = $('<a href="html/Listen.html"></a>');
 			img.attr('src',obj1[i].icon);
 			img1.attr('src','images/btn_play_32@2x.png');
 			span.text(obj1[i].name);
 			p1.text("查看本周全部听单");
+			a.append(p1);
 			p.text(obj[i].name);
 			div1.append(span);
 			div1.append(p);
 			div.append(img);
 			div.append(div1);
 			div.append(img1);
-			div2.append(p1);
+			div2.append(a);
 			div2.append(img2)
 			$('.section').append(div);
 			arr.push(obj[i].url)
 		}$('.section').append(div2);
 	}
 })
-		
+function goto(){
+	location.href=""
+}
 var isShow = true;
 function play(ele){
 	var audio = $('audio')[0];
@@ -119,7 +125,7 @@ $.ajax({
 		var obj = JSON.parse(data).response;
 		for(var i = 0; i < obj.length; i++){
 			var li = $('<li></li>');
-			var a = $('<a href=""></a>');
+			var a = $('<a href="html/High_quality_courses.html"></a>');
 			var img = $('<img src="" alt="" />');
 			var p = $('<p></p>');
 			img.attr('src',obj[i].icon);
@@ -129,11 +135,10 @@ $.ajax({
 			li.append(a);
 			$('.nav_two_box').append(li);
 
-			var div = $('<div></div>');
-			var span = $('<span></span>');
-			var iimg	
-			var ul = $('<ul></ul>');
-			var li = $('<li></li>');
+			// var div = $('<div></div>');
+			// var span = $('<span></span>');	
+			// var ul = $('<ul></ul>');
+			// var li = $('<li></li>');
 
 		}
 	}
@@ -150,12 +155,12 @@ $.ajax({
 			var ul = $('<ul></ul>');
 			var li = $('<li></li>');
 			
-			var a1 = $('<a href=""></a>');
+			var a1 = $('<a href="html/High_quality_courses.html"></a>');
 			span.text(obj[i].title);
 			img.attr('src','images/tj_icon_week_more_32@2x.png');
-			var a = $('<a href="" class="img_box_one"></a>');
-			var a2 = $('<a href=""></a>');
-			var a3 = $('<a href=""></a>');
+			var a = $('<a href="html/contentgk.html" class="img_box_one"></a>');
+			var a2 = $('<a href="html/contentgk.html"></a>');
+			var a3 = $('<a href="html/contentgk.html"></a>');
 			var img1 = $('<img src="" alt="" />');
 			var img2 = $('<img src="" alt="" />');
 			var img3 = $('<img src="" alt="" />');

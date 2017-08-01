@@ -855,7 +855,7 @@
                         "goodstype": "1"
                     },
                     {
-                        "goodsname": "2018高考白皮书 （2017高考试题分析及2018备考建议）",
+                        "goodsname": "2018高考白皮书 （2017高考试题分析）",
                         "goodsprice": "9.99",
                         "goodsimg": "https://sstore.fengbee.cn/goods/avatar/1497603987_6827_gkbpsspt.jpg",
                         "gid": "340715023",
@@ -956,7 +956,7 @@
                 "name": "励志壁纸",
                 "goodsinfo": [
                     {
-                        "goodsname": "【第二辑】蜂背主题励志壁纸（24张）【付款后直接发邮箱】",
+                        "goodsname": "【第二辑】蜂背主题励志壁纸（24张）",
                         "goodsprice": "6.99",
                         "goodsimg": "https://sstore.fengbee.cn/goods/avatar/蜂背手机壁纸-2.jpg",
                         "gid": "315326901",
